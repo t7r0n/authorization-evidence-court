@@ -2,13 +2,19 @@
 
 A local healthcare workflow prototype for assembling synthetic prior-authorization evidence packs and validating claim support.
 
-## Features
+`fairway-health-prior-auth-evidence-court` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Use case
+
+Prior Authorization Evidence Court: Medical-Necessity Decisions With Source-Level Proof.
+
+## Signal design
 
 - Synthetic policy, clinical, and authorization-case fixtures with no PHI.
 - Evidence sufficiency checks for denial risk, missing documents, and policy alignment.
 - Verifier-backed decision reports and an offline review dashboard.
 
-## Run Locally
+## Demo path
 
 ```bash
 uv sync
@@ -23,7 +29,7 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Files worth opening
 
 - `outputs/dashboard.html`
 - `outputs/decision_report.md`
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Build checks
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## Data policy
+
+`Prior Authorization Evidence Court` checks in synthetic fixtures only. Runtime state, dashboards, caches, virtual environments, and generated packs stay out of git.
