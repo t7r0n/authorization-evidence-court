@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'evidence_score'
 PRIMARY_LABEL = 'Evidence'
 CHECKS = ['eligible case approved with exact evidence', 'missing documentation not over-approved', 'contradictory record escalated', 'unsupported clinical sentence fails verification']
 CASES = [['case-001', 'meets_policy', 'approve', True, 95, 'note:N12 imaging:I4 policy:P2', 'conservative therapy and neuro deficit documented'], ['case-014', 'missing_evidence', 'deny_missing_docs', True, 52, 'note:N30 policy:P8', 'duration of failed PT not documented'], ['case-021', 'contradiction', 'escalate', True, 66, 'note:N44 lab:L9 policy:P4', 'symptom notes contradict risk score table'], ['case-033', 'appeal_ready', 'approve', True, 89, 'med:M7 lab:L12 policy:P9', 'step therapy failure documented'], ['case-041', 'exclusion', 'deny', False, 74, 'note:N55 policy:P11', 'policy exclusion triggered despite symptoms']]
-SLUG = 'priorauth-evidence-court'
+SLUG = 'authorization-evidence-court'
 
 
 class DomainCase(BaseModel):

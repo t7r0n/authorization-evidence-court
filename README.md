@@ -3,7 +3,7 @@
 ![Prior Authorization Evidence Court working preview](outputs/project_working.svg)
 A local healthcare workflow prototype for assembling synthetic prior-authorization evidence packs and validating claim support.
 
-`priorauth-evidence-court` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+`authorization-evidence-court` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
 
 ## Use case
 

@@ -1,5 +1,5 @@
 [project]
-name = "priorauth-evidence-court"
+name = "authorization-evidence-court"
 version = "0.1.0"
 description = "Prior Authorization Evidence Court: Medical-Necessity Decisions With Source-Level Proof"
 requires-python = ">=3.12"
